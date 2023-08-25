@@ -3,17 +3,20 @@ const convertButton = document.querySelector(".convert-button"); //botão para c
 
 const currencySelect = document.querySelector(".currency-select");
 
+
+const convertFrom = document.querySelector(".convert-from");
+
 function click() {
   const inputCurrencyValue = document.querySelector(".input-currency").value; // pega o valor em Real
 
   const currencyToConvert = document.querySelector(".currency-to-convert"); //valor em real
 
   const currencyValue = document.querySelector(".currency-value"); //valor convertido
-
+  const realToday = 1; // valor do real
   const dolarToday = 5; // valor do Dolor do dia
   const euroToday = 5.41; // valor do euro do dia
   const libraToday = 6.35; // valor da libra do dia
-  const bitcoinToday = 130116; // valor do bitcoin do dia 
+  const bitcoinToday = 130116.46; // valor do bitcoin do dia 
 
   currencyToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -51,7 +54,17 @@ function click() {
       currency: "BTC",
     }).format(inputCurrencyValue / bitcoinToday);
   }
+
+  if(currencyDe.value == "dolar"){
+    currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+    }).format(inputCurrencyValue / dolarToday)
+  }
+
 }
+
+
 function changeCurency() {
   const nameMoeada = document.querySelector(".name-moeada");
   const currencyImg = document.querySelector(".img-moedas");
@@ -68,10 +81,12 @@ function changeCurency() {
     nameMoeada.innerHTML = "Libra";
     currencyImg.src = "./assents/libra 1.png";
   }
+
   if (currencySelect.value == "bitcoin") {
-    nameMoeada.innerHTML = "Bitcoin";
+    nameMoeada.innerHTML = "bitcoin";
     currencyImg.src = "./assents/bitcoin 1.png";
   }
+ 
   click()
 }
 

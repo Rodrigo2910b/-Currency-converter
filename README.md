@@ -1,6 +1,6 @@
 # Conversor de Moeda
 
-![Screenshot do Conversor de Moeda](screenshot.png)
+
 
 Um simples aplicativo web que permite aos usuários converter valores de Real Brasileiro (BRL) para outras moedas como Dólar Americano (USD), Euro (EUR), Libra Esterlina (GBP) e Bitcoin (BTC).
 
@@ -37,6 +37,9 @@ Um simples aplicativo web que permite aos usuários converter valores de Real Br
 ## Licença
 
 Este projeto é distribuído sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais detalhes.
+
+
+<img src="https://github.com/Rodrigo2910b/-Currency-converter/blob/master/assents/currency-converte.png?raw=true"/>
 
 ---
 

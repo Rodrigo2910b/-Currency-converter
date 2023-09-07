@@ -9,18 +9,19 @@ body{
   background-color: #8A51FC;;
 }
 .gif{
-  width:380px;
-  height: 300px;
+  width:220px;
+  height: 200px;
   display: block;
   margin: auto;
 }
 main{
   
-  width: 375px;
+  width: 320px;
+  height: 560px;
   background-color:#F4F4F4 ;
   border-radius: 20px;
   margin: 0 auto 40px;
-  padding: 44px 24px 23px  ;
+  padding: 20px 24px 23px  ;
  
 }
 label{
@@ -35,8 +36,8 @@ select, input{
   background: #FFF;
   height: 48px;
   width: 100%;
-  margin-bottom: 24px;
-  padding-left: 18px;
+  margin-bottom: 4px;
+  padding-left: 14px;
   font-weight: 700;
   cursor: pointer;
 }
@@ -53,9 +54,9 @@ button{
   color: #FFF;
   font-weight: 700;
   font-size: 18px;
-  height: 48px;
+  height: 40px;
   width: 100%;
-  margin: 33px 0;
+  margin: 15px 0;
   cursor: pointer;
 }
 button:hover{
@@ -65,8 +66,8 @@ button:active{
   opacity: 0.6;
 }
 .img-moedas, .img-moeda-br{
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
 }
 .name-moeda, .name-moeada-fixa{
   color: #777;
@@ -74,26 +75,30 @@ button:active{
   font-weight: 400;
 }
 .currency-value, .currency-to-convert{
-  font-size: 20px;
+  font-size: 15px;
   color: #555;
   font-weight: 700;
 }
 section{
   border-radius: 20px;
   border: 1px solid #772FD3;
-  margin-top:36px ;
-  padding: 12px;
+  margin-top:0px ;
+  padding: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
 }
 .arrow-img {
-  margin: 15px;
+  margin: 10px;
+  width: 18px;
 }
 .currency-box{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
+}
+@media screen {
+  
 }

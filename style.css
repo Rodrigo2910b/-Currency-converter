@@ -4,31 +4,30 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   outline: none;
+
 }
 body{
-  background-color: #8A51FC;;
+  background-color: #421896;;
+  height: 100vh;
 }
-.gif{
-  width:220px;
-  height: 200px;
-  display: block;
-  margin: auto;
-}
+
+
 main{
-  
+
   width: 320px;
   height: 560px;
   background-color:#F4F4F4 ;
   border-radius: 20px;
   margin: 0 auto 40px;
   padding: 20px 24px 23px  ;
- 
+
+
 }
 label{
   color: #777;
   font-weight: 700;
   font-size: 14px;
- 
+
 }
 select, input{
   border-radius: 4px;
@@ -98,7 +97,4 @@ section{
   flex-direction: column;
   align-items: center;
   gap: 4px;
-}
-@media screen {
-  
 }

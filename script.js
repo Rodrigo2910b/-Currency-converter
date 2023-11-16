@@ -1,9 +1,17 @@
-function click() {
+async function click() {
+
   const inputCurrencyValue = parseFloat(document.querySelector(".input-currency").value); // Parse the input as a float
 
   const currencyToConvert = document.querySelector(".currency-to-convert");
   const currencyValue = document.querySelector(".currency-value");
-  
+
+
+  const date = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+  const euro = date.EURBRL.high
+  const dolar = date.USDBRL.high
+  const bitcoin = date.BTCBRL.high
+
   currencyToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
     style: "currency",
     currency: "BRL",
@@ -23,17 +31,17 @@ function click() {
       currencyImgSrc = "./assents/libra 1.png"; // Set the image source for GBP
       break;
     case "dolar":
-      exchangeRate = 5;
+      exchangeRate = dolar;
       targetCurrency = "USD";
       currencyImgSrc = "./assents/estados-unidos (1) 1.png"; // Set the image source for USD
       break;
     case "euro":
-      exchangeRate = 5.41;
+      exchangeRate = euro;
       targetCurrency = "EUR";
       currencyImgSrc = "./assents/euro.png"; // Set the image source for EUR
       break;
     case "bitcoin":
-      exchangeRate = 130116.46;
+      exchangeRate = bitcoin;
       targetCurrency = "BTC";
       currencyImgSrc = "./assents/bitcoin 1.png"; // Set the image source for BTC
       break;
